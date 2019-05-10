@@ -1,0 +1,7 @@
+<h1>Task status</h1>
+<h2><%= @task.title %></h2>
+<p>Remember:</p>
+<p><%= @task.details %></p>
+<p>Have you done it?</p>
+<p><%= @task.completed ? 'Yes' : 'No' %></p>
+<%= link_to "DELETE", task_path(@task), method: :delete %>
